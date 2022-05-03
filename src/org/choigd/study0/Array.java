@@ -1,6 +1,5 @@
 package org.choigd.study0;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /*
@@ -32,9 +31,7 @@ public class Array {
             sum +=Integer.parseInt(arr[i]);
         }
 
-        System.out.println("sum = " + sum);
+        System.out.println(sum);
 
-
-        
     }
 }
