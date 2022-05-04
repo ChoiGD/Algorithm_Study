@@ -28,7 +28,7 @@ public class ArrayAvg {
 
         int max = 0;
         int sum = 0;
-        for (int i = 0; i < numArr.length; i++) {
+        for(int i = 0; i < numArr.length; i++) {
             if(numArr[i] > max){
                 max = numArr[i];
             }
