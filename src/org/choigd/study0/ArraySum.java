@@ -25,6 +25,5 @@ public class ArraySum {
             System.out.println(sumArr[jNum] - sumArr[iNum -1]);
         }
 
-
     }
 }
