@@ -2,7 +2,7 @@ package org.choigd.study0;
 
 import java.util.Scanner;
 /*
-백준1546번
+백준1546번(O(N))
 max값 구하기, 임의의 평균값
 ex) 수학점수 30, 과학점수 50, 국어점수 70
 임의의 수학점수 평균 = 30 / 70 * 100 ...
