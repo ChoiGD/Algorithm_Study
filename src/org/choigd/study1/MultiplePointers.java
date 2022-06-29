@@ -4,8 +4,13 @@ package org.choigd.study1;
 MultiplePointers (다중포인터 패턴)
 
 배열의 인덱스를 사용한다. 왼쪽, 오른쪽 두개의 포인터를 사용하는 패턴
+<<<<<<< HEAD
 
 //JS Code
+=======
+JS Code
+
+>>>>>>> 953cab550b787a4f071ddec3e2e6362c0dff9be1
 function countUniqueValues(arr){
   //arr 0일경우
   if(arr.length === 0){

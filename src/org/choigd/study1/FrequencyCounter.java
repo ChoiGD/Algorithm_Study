@@ -6,7 +6,13 @@ FrequencyCounter (빈도수 세기)
 
 객체 배열을 사용하여 비교하면 비교적 쉽게 처리할 수 있다.
 
+<<<<<<< HEAD
 //JS Code
+=======
+
+JS Code
+
+>>>>>>> 953cab550b787a4f071ddec3e2e6362c0dff9be1
 function validAnagram(str1,str2){
   // add whatever parameters you deem necessary - good luck!
   // st1, str2의 길이가 다를 경우 리턴
