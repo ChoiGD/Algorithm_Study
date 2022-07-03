@@ -25,6 +25,30 @@ function linearSearch(arr, num){
 
 
 2. Binary Search(이진 검색)
+좌측, 우측 데이터를 분리하여서 검색을 진행, 시작, 끝, 평균값을 이용해서 처리한다
+주의점 : 정렬이 되어있어야 가능하다
+
+function binarySearch(arr, num){
+
+  let start = 0
+  let end = arr.length - 1
+  let middle = Math.floor((start + end) / 2)
+
+  while(arr[middle] !== num && start <= end){
+
+      if(num < arr[middle]){
+          end = middle - 1
+      }else{
+          start = middle + 1
+      }
+      middle = Math.floor((start + end) / 2)
+  }
+  if(arr[middle] === num){
+      return middle
+  }
+  return -1
+
+}
 
 
 */
