@@ -24,7 +24,7 @@ function linearSearch(arr, num){
 }
 
 
-2. Binary Search(이진 검색)
+2. Binary Search(이진 검색) O(log n), O(1)
 좌측, 우측 데이터를 분리하여서 검색을 진행, 시작, 끝, 평균값을 이용해서 처리한다
 주의점 : 정렬이 되어있어야 가능하다
 
@@ -50,7 +50,9 @@ function binarySearch(arr, num){
 
 }
 
-
+3. Naive String Search
+긴문자열을 반복하는, 짤은 문자열은 반복하는 식이 필요, 카운트도 필요
+이중반복문!
 */
 
 
