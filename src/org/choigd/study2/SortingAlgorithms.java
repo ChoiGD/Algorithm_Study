@@ -16,6 +16,7 @@ arr.sort(numSort)를 실행시키면 숫자도 정렬이 가능하다
 
 
 Bubble Sort, O(N^2)
+정렬이 거의다 되어있을 경우 버블정렬을 선택하는 것이 좋다
 
 function BubbleSort(arr){
     let noSwap;
@@ -37,8 +38,38 @@ function BubbleSort(arr){
 
 
 
-Selection Sort, Insertion Sort
+Selection Sort
 
+function selectionSort(arr){
+    for(var i = 0; i < arr.length; i++){
+        var lowest = i;
+        for(var j = i+1; j < arr.length; j++){
+            if(arr[j] < arr[lowest]){
+                lowest = j;
+            }
+        }
+        if(i !== lowest){
+            //SWAP!
+            var temp = arr[i];
+            arr[i] = arr[lowest];
+            arr[lowest] = temp;
+        }
+    }
+    return arr;
+}
+
+Insertion Sort
+function insertionSort(arr){
+	var currentVal;
+    for(var i = 1; i < arr.length; i++){
+        currentVal = arr[i];
+        for(var j = i - 1; j >= 0 && arr[j] > currentVal; j--) {
+            arr[j+1] = arr[j]
+        }
+        arr[j+1] = currentVal;
+    }
+    return arr;
+}
  */
 
 
