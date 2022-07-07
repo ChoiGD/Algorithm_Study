@@ -80,8 +80,36 @@ function quickSort(arr, left = 0, right = arr.length -1){
      return arr;
 }
 
-Radix Sort
+Radix Sort(기수 정렬)
+비교 알고리즘이 아닌 정렬 알고리즘, 직접 비교하지 않는다 => 다른 방식으로 데이터를 처리
+숫자로 진행된다 => 이진수, ex) 숫자의 크기에 대한 정보를 자릿수로 인코 네자리수 > 두자리수 (가장 오른쪽에 잇는 수)
+1. 자릿수 알아내(수, 위치) => 그 위치의 숫자를 반환
 
+function getDigit(num, i) {
+    return Math.floor(Math.abs(num) / Math.pow(10, i)) % 10
+}
+
+2. 수에 자릿수가 얼마나 되는지 알아내는 것 => 버킷에 몇번 넣어야하는지 알아내기 위함, 가장 큰 숫자에 자릿수가 얼마나 되는지 알아내기
+
+function digitCount(num){
+    if(num === 0) return 1
+    return Math.floor(Math.log10(Math.abs(num))) + 1
+}
+
+3. 기수 정렬
+
+function radixSort(nums){
+    let maxDigitCount = mostDigits(nums);
+    for(let k = 0; k < maxDigitCount; k++){
+        let digitBuckets = Array.from({length: 10}, () => []);
+        for(let i = 0; i < nums.length; i++){
+            let digit = getDigit(nums[i],k);
+            digitBuckets[digit].push(nums[i]);
+        }
+        nums = [].concat(...digitBuckets);
+    }
+    return nums;
+}
 
 */
 
