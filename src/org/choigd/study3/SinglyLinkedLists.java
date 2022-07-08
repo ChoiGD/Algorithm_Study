@@ -22,7 +22,7 @@ class SinglyLinkedList{
         this.tail = null;
         this.length = 0;
     }
-    //push 메소드
+    //push 메소드 ( 새로운 노드를 맨 뒤에 추가 )
     push(val){
         var newNode = new Node(val);
         if(!this.head){
@@ -35,7 +35,7 @@ class SinglyLinkedList{
         this.length++;
         return this;
     }
-    //pop 메소드
+    //pop 메소드 ( 마지막 노드를 제거 )
     pop(){
         if(!this.head) return undefined;
         var current = this.head;
@@ -52,7 +52,30 @@ class SinglyLinkedList{
             this.tail = null;
         }
         return current;
-
+    }
+    //shift 메소드 ( 마지막 노드 제거 )
+    shift(){
+        if(!this.head) return undefined;
+        var currentHead = this.head;
+        this.head = currentHead.next;
+        this.length--;
+        if(this.length === 0){
+            this.tail = null;
+        }
+        return currentHead;
+    }
+    //unshift 메소드 ( 새로운 노드를 맨 앞에 추가 )
+    unshift(val){
+        var newNode = new Node(val);
+        if(!this.head) {
+            this.head = newNode;
+            this.tail = this.head;
+        } else {
+            newNode.next = this.head;
+            this.head = newNode;
+        }
+        this.length++;
+        return this;
     }
 }
 
