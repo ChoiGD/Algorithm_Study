@@ -1,7 +1,7 @@
 package org.choigd.study3;
 
 /*
-SinglyLinkedLists(연결리스트)
+SinglyLinkedLists(단일연결리스트)
 -각각의 엘리먼트를 "노드"
 -head(시작), tail(끝), length(길이)
 ex)5층을 가기위해서 1층부터 가야한다 => 오직 단일 방향으로만 연결 되어있다
@@ -111,6 +111,42 @@ class SinglyLinkedList{
         this.length++;
         return true;
     }
+    //remove 메소드
+    remove(index){
+        if(index < 0 || index >= this.length) return undefined;
+        if(index === 0) return this.shift();
+        if(index === this.length - 1) return this.pop();
+        var previousNode = this.get(index - 1);
+        var removed = previousNode.next;
+        previousNode.next = removed.next;
+        this.length--;
+        return removed;
+    }
+    //reverse 메소드 (역순)
+    reverse(){
+      var node = this.head;
+      this.head = this.tail;
+      this.tail = node;
+      var next;
+      var prev = null;
+      for(var i = 0; i < this.length; i++){
+        next = node.next;
+        node.next = prev;
+        prev = node;
+        node = next;
+      }
+      return this;
+    }
+    print(){
+        var arr = [];
+        var current = this.head
+        while(current){
+            arr.push(current.val)
+            current = current.next
+        }
+        console.log(arr);
+    }
+
 
 }
 
