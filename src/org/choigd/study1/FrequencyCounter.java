@@ -6,9 +6,6 @@ FrequencyCounter (빈도수 세기)
 
 객체 배열을 사용하여 비교하면 비교적 쉽게 처리할 수 있다.
 
-<<<<<<< HEAD
-//JS Code
-=======
 
 JS Code
 
