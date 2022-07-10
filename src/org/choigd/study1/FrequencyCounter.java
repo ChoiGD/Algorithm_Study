@@ -4,7 +4,7 @@ package org.choigd.study1;
 FrequencyCounter (빈도수 세기)
 두개의 배열이나 문자열을 비교할때 사용하는 패턴
 
-객체 배열을 사용하여 비교하면 비교적 쉽게 처리할 수 있다.
+-객체 배열을 사용하여 비교하면 비교적 쉽게 처리할 수 있다.
 
 
 JS Code

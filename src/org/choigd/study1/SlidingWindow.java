@@ -2,9 +2,10 @@ package org.choigd.study1;
 
 /*
 SlidingWindow
-배열의 합을 구할 때 사용하는 패턴
+-배열의 합을 구할 때 사용하는 패턴
+-배열이나 리스트의 요소의 일정 범위 값을 비교할때 사용하면 매우 유용
 
-//JS Code
+JS Code
 function maxSubarraySum(arr, num) {
   if ( num > arr.length){
     return null;
