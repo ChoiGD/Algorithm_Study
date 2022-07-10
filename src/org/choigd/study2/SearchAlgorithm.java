@@ -53,6 +53,17 @@ function binarySearch(arr, num){
 3. Naive String Search
 긴문자열을 반복하는, 짤은 문자열은 반복하는 식이 필요, 카운트도 필요
 이중반복문!
+
+function naiveSearch(long, short){
+    var count = 0;
+    for(var i = 0; i < long.length; i++){
+        for(var j = 0; j < short.length; j++){
+           if(short[j] !== long[i+j]) break;
+           if(j === short.length - 1) count++;
+        }
+    }
+    return count;
+}
 */
 
 
