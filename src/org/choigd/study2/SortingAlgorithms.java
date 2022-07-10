@@ -16,7 +16,8 @@ arr.sort(numSort)를 실행시키면 숫자도 정렬이 가능하다
 
 
 Bubble Sort, O(N^2)
-정렬이 거의다 되어있을 경우 버블정렬을 선택하는 것이 좋다
+- 정렬이 거의다 되어있을 경우 버블정렬을 선택하는 것이 좋다
+- 서로 인접한 두 원소의 대소를 비교하고, 조건에 맞지 않다면 자리를 교환하며 정렬하는 알고리즘
 
 function BubbleSort(arr){
     let noSwap;
@@ -38,7 +39,8 @@ function BubbleSort(arr){
 
 
 Selection Sort, O(N^2)
--엄청 효율적인 정렬은 아니다
+- 엄청 효율적인 정렬은 아니다
+- 해당 순서에 원소를 넣을 위치는 이미 정해져 있고, 어떤 원소를 넣을지 선택하는 알고리즘
 
 function selectionSort(arr){
     for(var i = 0; i < arr.length; i++){
@@ -59,6 +61,8 @@ function selectionSort(arr){
 }
 
 Insertion Sort
+- 2번째 원소부터 시작하여 그 앞의 원소들과 비교하여 삽입할 위치를 지정한 후, 원소를 뒤로 옮기고 지정된 자리에 자료를 삽입하는 알고리즘
+
 function insertionSort(arr){
 	var currentVal;
     for(var i = 1; i < arr.length; i++){
