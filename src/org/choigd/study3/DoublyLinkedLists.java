@@ -17,7 +17,7 @@ class DoublyLinkedList{
     //push 메소드
     push(val){
         var newNode = new Node(val);
-        //객체에 아무것도 없을 시에
+        //객체에 아무것도 없을 시
         if(this.length === 0){
             this.head = newNode;
             this.tail = newNode;
@@ -28,6 +28,21 @@ class DoublyLinkedList{
         }
         this.length++;
         return this;
+    }
+    //pop 메소드
+    pop(){
+        if(!this.head) return undefined;
+        var poppedNode = this.tail;
+        if(this.length === 1){
+            this.head = null;
+            this.tail = null;
+        } else {
+            this.tail = poppedNode.prev;
+            this.tail.next = null;
+            poppedNode.prev = null;
+        }
+        this.length--;
+        return poppedNode;
     }
 }
 
