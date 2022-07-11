@@ -3,14 +3,12 @@ package org.choigd.study1;
 /*
 MultiplePointers (다중포인터 패턴)
 
-배열의 인덱스를 사용한다. 왼쪽, 오른쪽 두개의 포인터를 사용하는 패턴
-<<<<<<< HEAD
+-배열의 인덱스를 사용한다. 왼쪽, 오른쪽 두개의 포인터를 사용하는 패턴
+-2개 또는 그 이상의 포인터를 두고 값들을 비교하여 문제를 해결하는 알고리즘 패턴
 
-//JS Code
-=======
+
 JS Code
 
->>>>>>> 953cab550b787a4f071ddec3e2e6362c0dff9be1
 function countUniqueValues(arr){
   //arr 0일경우
   if(arr.length === 0){
