@@ -7,6 +7,25 @@ Queues
 - Printing / Task processing
 
 배열 + 클래스로 구성 가능
+배열
+- pop, unshift
+
+클래스
+
+class Queue{
+    constructor(){
+        this.first = null;
+        this.last = null;
+        this.size = 0;
+    }
+}
+
+class Node{
+    constructor(value){
+        this.value = value;
+        this.next =null;
+    }
+}
 
  */
 public class Queues {
