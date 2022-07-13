@@ -24,6 +24,19 @@ Trees(이진 검색 트리)
 - 속도가 빠르다
 - 트리를 반으로 나눠 작업하는 것이 되기에...
 
+class Node{
+    constructor(value){
+        this.value = value;
+        this.left = null;
+        this.right = null;
+    }
+}
+
+class BinarySearchTree{
+    constructor(){
+        this.root = null
+    }
+}
 
  */
 public class Trees {
