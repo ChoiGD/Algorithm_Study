@@ -36,6 +36,36 @@ class BinarySearchTree{
     constructor(){
         this.root = null
     }
+    //insert 메소드
+    insert(value){
+        var newNode = new Node(value);
+        if(this.root === null){
+            this.root = newNode;
+            return this;
+        } else{
+            var current = this.root;
+            while(true){
+                //같은 값이 중복될 경우 무한 루프에 빠지게 된다
+                if(value === current.value) return undefiend;
+
+                if(value < current.value){
+                    if(current.left === null){
+                        current.left = newNode;
+                        return this;
+                    }else{
+                        current = current.left;
+                    }
+                } else if(value > current.value){
+                    if(current.right === null){
+                        current.right = newNode;
+                        return this;
+                    }else{
+                        current = current.right;
+                    }
+                }
+            }
+        }
+    }
 }
 
  */
