@@ -6,6 +6,14 @@ Trees(이진 검색 트리)
 - 노드로 이루어진 데이터 구조, 부모 - 자식 관계, 나무를 생각해보
 - Lists : 선형구조, Trees : 비선형구조
 - 노드는 부모 - 자식 관계로만 설정 되어야 한다, 루트에서 멀어지는 방향으로 향해야한다
+
+사용예시
+- HTML DOM
+- Network Routing
+- Abstract Syntax Tree
+- Artificial Intelligence
+- Folders in Operating Systems
+- Computer File Systems
  */
 public class Trees {
 }
