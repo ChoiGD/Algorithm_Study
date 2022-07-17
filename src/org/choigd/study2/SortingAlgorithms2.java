@@ -97,6 +97,7 @@ function digitCount(num){
 }
 
 3. 기수 정렬
+낮은 자리수부터 비교하여 정렬해 간다는 것을 기본 개념, 비교 연산을 하지 않으며 정렬 속도가 빠르다
 
 function radixSort(nums){
     let maxDigitCount = mostDigits(nums);

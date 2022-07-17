@@ -1,5 +1,11 @@
 package org.choigd.study3;
 /*
+DoublyLinkedLists(이중 연결 리스트)
+- 노드와 노드가 서로 연결 되어 있음
+- 이전 노드, 다음 노드로 구성
+- 양방향 탐색의 장점: 특정 인덱스 위치의 엘리먼트를 가져올 때, 반복문을 이요해서 탐색할 때
+- 메모리를 더 사용한다는 단점이 있다
+
 class Node{
     constructor(val){
         this.val = val;
