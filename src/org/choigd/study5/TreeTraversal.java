@@ -91,10 +91,45 @@ class BinarySearchTree {
         }
         return data;
     }
+    //전위
+    DFSPreOrder(){
+        var data = [];
+        function traverse(node){
+            data.push(node.value);
+            if(node.left) traverse(node.left);
+            if(node.right) traverse(node.right);
+        }
+        traverse(this.root);
+        return data;
+    }
+    //후위
+    DFSPostOrder(){
+        var data = [];
+        function traverse(node){
+            if(node.left) traverse(node.left);
+            if(node.right) traverse(node.right);
+            data.push(node.value);
+        }
+        traverse(this.root);
+        return data;
+    }
+    //중위
+    DFSInOrder(){
+        var data = [];
+        function traverse(node){
+            if(node.left) traverse(node.left);
+            data.push(node.value);
+            if(node.right) traverse(node.right);
+        }
+        traverse(this.root);
+        return data;
+    }
 }
 
 
-- 깊이 우선 탐색
+- 깊이 우선 탐색(Depth First Search)
+형제 노드로 넘어가기전에 수직으로 내려가는 탐색
+
     - 전위 순회
     - 후위 순회
     - 중위 순회
