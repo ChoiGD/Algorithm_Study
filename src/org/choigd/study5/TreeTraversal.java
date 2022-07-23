@@ -1,5 +1,7 @@
 package org.choigd.study5;
 /*
+중요
+
 TreeTraversal(트리 순회)
 어떤 트리에서든지 사용할 수 있는 개념
 재귀함수를 많이 사용하여 해결한다
