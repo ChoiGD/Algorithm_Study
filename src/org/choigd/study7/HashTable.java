@@ -9,6 +9,13 @@ HashTable(해시 테이블)
 입력값의 길이가 달라도 출력값은 언제나 고정된 길이로 반환
 동일한 값이 입력되면 동일한 출력값을 보장
 
+분리 연결법(Separate Chaining)과 개방 주소법(Open Addressing)
+
+JavaDML HashMap vs HashTable의 차이
+동기화 지원 여부
+병렬 처리를 하면서 자원의 동기화를 고려해야 하는 상황이라면 HashTable을 사용
+병렬 처리를 하지 않거나 자원의 동기화를 고려하지 않는 상황이라면 HashMap을 사용
+
 */
 public class HashTable {
 }
