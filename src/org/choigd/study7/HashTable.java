@@ -16,6 +16,17 @@ JavaDML HashMap vs HashTable의 차이
 병렬 처리를 하면서 자원의 동기화를 고려해야 하는 상황이라면 HashTable을 사용
 병렬 처리를 하지 않거나 자원의 동기화를 고려하지 않는 상황이라면 HashMap을 사용
 
+//해시함수
+function hash(key, arrayLen) {
+  let total = 0;
+  for (let char of key) {
+    // map "a" to 1, "b" to 2, "c" to 3, etc.
+    let value = char.charCodeAt(0) - 96
+    total = (total + value) % arrayLen;
+  }
+  return total;
+}
+
 */
 public class HashTable {
 }
