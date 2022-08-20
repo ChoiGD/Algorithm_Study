@@ -60,6 +60,38 @@ public class RecursiveFunction {
         return num * factorial(num-1);
     }
 
+    public int productOfArray(int arr[]){
+        //곱하기니까 기본값은 1
+        int sum = 1;
 
+        for(int i=0; i<arr.length; i++){
+            sum *= arr[i];
+        }
+
+        return sum;
+    }
+
+    public int recursiveRange(int num){
+        if(num == 0){return 0;}
+
+        return num + recursiveRange(num-1);
+    }
+
+    public static void main(String[] args) {
+
+        RecursiveFunction recursiveFunction = new RecursiveFunction();
+
+        int factorial = recursiveFunction.factorial(5);
+
+        System.out.println("factorial = " + factorial);
+
+        int[] arr = {1,2,3};
+
+        int productOfArray = recursiveFunction.productOfArray(arr);
+        System.out.println("productOfArray = " + productOfArray);
+
+        int recursiveRange = recursiveFunction.recursiveRange(3);
+        System.out.println("recursiveRange = " + recursiveRange);
+    }
 
 }
