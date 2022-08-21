@@ -68,4 +68,38 @@ function naiveSearch(long, short){
 
 
 public class SearchAlgorithm {
+
+    public int linearSearch(int[] arr, int num){
+        int idx = -1;
+        for(int i=0; i<arr.length; i++){
+            if(arr[i] == num){
+                idx = i;
+            }
+        }
+        return idx;
+    }
+
+    public int binarySearch(int[] arr, int num){
+
+        int start = 0;
+        int end = arr.length - 1;
+        int middle = (int) Math.floor((start + end) / 2);
+
+        while(arr[middle] != num && start <= end){
+
+            if(num < arr[middle]){
+                end = middle - 1;
+            }else{
+                start = middle + 1;
+            }
+            middle = (int) Math.floor((start + end) / 2);
+        }
+        if(arr[middle] == num){
+            return middle;
+        }
+        return -1;
+
+    }
+
+
 }
