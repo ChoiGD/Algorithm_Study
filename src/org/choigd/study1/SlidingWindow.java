@@ -47,7 +47,6 @@ Divide and Conquer (분할과 정복 패턴)
 */
 
 public class SlidingWindow {
-    public static void main(String[] args) {
 
-    }
+
 }
