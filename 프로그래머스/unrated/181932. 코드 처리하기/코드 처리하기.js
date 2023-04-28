@@ -1,7 +1,6 @@
 function solution(code) {
     var answer = '';
     let mode = true;
-    let ret = "";
     
     for(let i=0; i<code.length; i++){
         
@@ -25,7 +24,7 @@ function solution(code) {
                 break;
         }
     }
-     if(answer==="")
+     if(answer==='')
         answer = "EMPTY";
     return answer;
 }
