@@ -1,13 +1,20 @@
 function solution(arr) {
-    const pow2 = [0, 2, 4, 8, 16, 32, 64, 128, 256, 512]
-    const arrLen = arr.length
-    let idx
-    for(let i = 0 ; i < pow2.length ; i ++) {
-        if(arrLen < pow2[i]) break
-        idx = pow2[i]
+    
+    const len = arr.length;
+    
+    let i = 0;
+
+    while (true) {
+        const num = 2 ** i;
+
+        if (len > num) {
+            i++;
+        } else {
+            for (let i = 0; i < num - len; i++) {
+                arr.push(0);
+            }
+
+            return arr;
+        }
     }
-    
-    const zeroArr = Array(idx).fill(0)
-    
-    return [...arr, ...zeroArr.slice(0, idx-arrLen)]
 }
