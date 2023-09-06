@@ -5,6 +5,8 @@ function solution(spell, dic) {
         })
         return isSame
     })
+    console.log(dic.filter(str=>str.length === spell.length))
+   
 
     return isSameExist ? 1 : 2
 }
